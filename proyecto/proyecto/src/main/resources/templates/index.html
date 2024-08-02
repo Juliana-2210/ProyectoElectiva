@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria AAAAA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Clínica Veterinaria AAAAA</h1>
+
+<h2>Registrar Dueño</h2>
+<form id="dueñoForm">
+    <label for="nombreDueño">Nombre:</label>
+    <input type="text" id="nombreDueño" name="nombre" required>
+    <label for="telefono">Teléfono:</label>
+    <input type="text" id="telefono" name="telefono" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Registrar Dueño</button>
+</form>
+
+<h2>Registrar Mascota</h2>
+<form id="mascotaForm">
+    <label for="nombreMascota">Nombre:</label>
+    <input type="text" id="nombreMascota" name="nombre" required>
+    <label for="especie">Especie:</label>
+    <input type="text" id="especie" name="especie" required>
+    <label for="raza">Raza:</label>
+    <input type="text" id="raza" name="raza" required>
+    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+    <label for="dueñoId">ID del Dueño:</label>
+    <input type="text" id="dueñoId" name="dueñoId" required>
+    <button type="submit">Registrar Mascota</button>
+</form>
+
+<h2>Mascotas Registradas</h2>
+<ul id="mascotaList"></ul>
+
+<script src="app.js"></script>
+</body>
+</html>
